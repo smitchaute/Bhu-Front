@@ -10,10 +10,10 @@ const App = () => {
   useEffect(() => {
     const fetchTaskCounts = async () => {
       try {
-        const assignedResponse = await axios.get('https://bhu-front-v24t.vercel.app/assigned-count');
+        const assignedResponse = await axios.get('https://bhu-front-v24t-git-main-smitchaute.vercel.app/assigned-count');
         setAssignedCount(assignedResponse.data.count);
 
-        const unassignedResponse = await axios.get('https://bhu-front-v24t.vercel.app/unAssigned-count');
+        const unassignedResponse = await axios.get('https://bhu-front-v24t-git-main-smitchaute.vercel.app/unAssigned-count');
         setUnassignedCount(unassignedResponse.data.count);
       } catch (error) {
         console.error('Error fetching task counts:', error.message);
